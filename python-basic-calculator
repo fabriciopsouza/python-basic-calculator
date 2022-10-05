@@ -1,0 +1,37 @@
+#DSA - Projeto Calculadora em Python
+
+#Imprime o menu com instruções e opções.
+print('''
+********************Python Calculator********************
+
+Selecione o número da operação desejada:
+
+1- Soma
+2- Subtração
+3- Multiplicação
+4- Divisão
+
+''')
+
+validar = ['1','2','3','4']
+selecao =  input('Selecione o número da operação desejada: ')
+
+
+x = int(input('Digite o primeiro número: '))
+    
+y = int(input('Digite o segundo número: '))
+
+if selecao == '1':
+    print(f'{x} + {y} = {x+y}')
+    
+elif selecao == '2':
+    print(f'{x} - {y} = {x-y}')
+
+elif selecao == '3':
+    print(f'{x} x {y} = {x*y}')
+
+elif selecao == '4':
+    print(f'{x} / {y} = {x/y}')
+
+else:
+    print('Selecione uma opção válida (1/2/3/4)')
